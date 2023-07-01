@@ -1,15 +1,8 @@
-* { box-sizing: border-box;}
-
-
-body {margin: 0;}
-
-nav {
-  height: 70px;
-  display: flex;
-  padding: 20px 36px;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+* {
+  box-sizing: border-box;
 }
 
-.nav--logo {
-  max-width: 100px;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }

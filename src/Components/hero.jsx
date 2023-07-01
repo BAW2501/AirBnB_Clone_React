@@ -3,12 +3,10 @@ import gridphotos from "../Assets/photo-grid.png"
 
 export default function Hero() {
     return (
-        <>
-            <div>
-                <img className='hero--image' src={gridphotos} alt="grid of photos" />
-            </div>
-            <h1>Online Experiences</h1>
-            <p>Join unique interactive activities led by one-of-a-kind hosts-- all without leaving home. </p>
-        </>
+        <section className='hero'> 
+            <img className='hero--image' src={gridphotos} alt="grid of photos" />
+            <h1 className="hero--header">Online Experiences</h1>
+            <p className="hero--text">Join unique interactive activities led by one-of-a-kind hosts-- all without leaving home. </p>
+        </section>
     )
 }
