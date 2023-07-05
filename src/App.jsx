@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <Card
         img="katie-zaferes.png"
         rating="5.0"
