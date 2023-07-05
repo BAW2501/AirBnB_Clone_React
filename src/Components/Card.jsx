@@ -1,17 +1,16 @@
-import card_photo from '../Assets/katie-zaferes.png'
-import star_photo from '../Assets/star.png'
-export default function Card(){
+
+export default function Card(props) {
     return (
         <div className="card">
-        <img className='card--img' src={card_photo}></img>
-        <div className='card--stats'>
-            <img className='card--star' src={star_photo} />
-            <span>5.0</span>
-            <span className='grey'>(6) •</span>
-            <span className='grey'>USA</span>
-        </div>
-        <p>Life Lessons with Katie Zeferes</p>
-        <p> <span className='bold'>From $136</span> / Person</p>
+            <img src={`../images/${props.img}`} className="card--image" />
+            <div className="card--stats">
+                <img src="../Assets/star.png" className="card--star" />
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.country}</span>
+            </div>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
